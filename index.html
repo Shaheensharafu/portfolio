@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaheen - Web-Developer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Shaheen Sharafuddeen</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#work">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resume">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav flex-row">
+
+                    <li class="nav-item">
+                        <a class="social-icon" href="https://github.com/Shaheensharafu/"><i class="ri-github-line"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="social-icon" href="https://www.instagram.com/shane_sharafu/"><i class="ri-instagram-line"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <section id="home" class="d-flex align-items-center min-vh-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="display-2 fw-bold" data-aos="fade-up">Hi there! I am <span class="text-brand">Shaheen Sharafuddeen</span></h1>
+                    <h4 data-aos="fade-up" data-aos-delay="100" class="mt-3 mb-5">Web-Developer</h4>
+                    <div data-aos="fade-up" data-aos-delay="200"><button id="downloadBtn" class="download-btn btn btn-brand">Download Resume</button></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section-padding section-connector">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="setion-title text-center" data-aos="fade-up" data-aos-delay="100">
+                        <h1>Services</h1>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row gy-4 text-center">
+                <div class="col-lg-3 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service py-5 px-4 border">
+                        <div class="service-icon">
+                            <i class="ri-stack-line"></i>
+                        </div>
+                        <h5 class="mt-4" >Frontend</h5>
+                        <p>Peek Inside</p>
+                        <a href="frontEnd.html" class="custom-link">
+                            <span></span>
+                            <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service py-5 px-4 border">
+                        <div class="service-icon">
+                            <i class="ri-profile-line"></i>
+                        </div>
+                        <h5 class="mt-4" id="backend" >Backend</h5>
+                        <p>Peek Inside</p>
+                        <a href="backEnd.html" class="custom-link">
+                            <span></span>
+                            <i class="ri-arrow-right-line"></i> 
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service py-5 px-4 border">
+                        <div class="service-icon">
+                            <i class="ri-database-2-line"></i>
+                        </div>
+                        <h5 class="mt-4" >WordPress</h5>
+                        <p>Peek Inside</p>
+                        <a href="wordPress.html" class="custom-link">
+                            <span></span>
+                            <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service py-5 px-4 border">
+                        <div class="service-icon">
+                            <i class="ri-window-fill"></i>
+                        </div>
+                        <h5 class="mt-4" >Digital Marcketing</h5>
+                        <p>Peek Inside</p>
+                        <a href="digitalMarketing.html" class="custom-link">
+                            <span></span>
+                            <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <!-- Work -->
+    <section id="work" class="section-padding section-connector">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12" data-aos="fade-up" data-aos-delay="100">
+                    <div class="setion-title text-center">
+                        <h1>Projects</h1>
+                        <p>These are some projects that i built</p>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-2">
+                <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project">
+                        <img src="./assets/images/p-1.jpg" alt="">
+                        <div class="content">
+                            <a href="https://furniture-proj.netlify.app/" target="_blank" class="btn btn-outline-light">Visit Website</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project">
+                        <img src="./assets/images/p-2.jpg" alt="">
+                        <div class="content">
+                            <a href="https://theguideeducation.com" target="_blank" class="btn btn-outline-light">Visit Website</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project">
+                        <img src="./assets/images/p-3.jpg" alt="">
+                        <div class="content">
+                            <a href="https://mvrayurvedahospital.com" target="_blank" class="btn btn-outline-light">Visit Website</a>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- resume -->
+    <section id="resume" class="section-padding section-connector">
+        <div class="container">
+            <div class="row">
+                <div class="col-12" data-aos="fade-up" data-aos-delay="100">
+                    <div class="setion-title text-center">
+                        <h1>Education</h1>
+                        <p></p>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row gy-5">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-12" data-aos="fade-up" data-aos-delay="100">
+                            <div class="eduexp p-5 pt-0">
+                                <h5>BCOM</h5>
+                                <small class="text-brand">PA FIRST GRADE COLLEGE</small>
+                                <small class="text-brand">MANGLORE</small>
+                                <small class="text-brand">2019-2022</small>
+                            </div>
+                        </div>
+                        <div class="col-12" data-aos="fade-up" data-aos-delay="200">
+                        </div>
+                        <div class="col-12" data-aos="fade-up" data-aos-delay="300">
+                            <div class="eduexp p-5 pt-0 pb-0">
+                                <h5>PYTHON FULLSTACK DEVOLOPMENT</h5>
+                                <small class="text-brand">Python Full-stack expertz lab cochin</small>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- cont -->
+    <section id="contact" class="section-padding section-connector">
+        <div class="container">
+            <div class="row">
+                <div class="col-12" data-aos="fade-up" data-aos-delay="100">
+                    <div class="setion-title text-center">
+                        <h1>Contact Me</h1>
+                        <p></p>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row gy-5">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-12" data-aos="fade-up" data-aos-delay="100">
+                            <div class="eduexp p-5 pt-0">
+                                <h3><a href="mailto:shaheensharafu777@gmail.com">Send Email</a></h3>
+                               
+                            </div>
+                        </div>
+                        <div class="col-12" data-aos="fade-up" data-aos-delay="200">
+                        </div>
+                        <div class="col-12" data-aos="fade-up" data-aos-delay="300">
+                            <div class="eduexp p-5 pt-0 pb-0">
+                                <h3><a href="tel:+971581415466">Call Me</a></h3>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- WhatsApp floating button -->
+      <div class="whatsapp-icon">
+        <!-- <a href="https://wa.me/+917012828918?text=Hello%20from%20your%20website" target="_blank" rel="noopener noreferrer"> -->
+            <!-- <img src="whatsapp-icon.png" alt="WhatsApp Icon"> -->
+            <a class="social-icon" href="https://wa.me/+917012828918?text=Hello%20from%20your%20website"><i class="ri-whatsapp-line"></i></a>
+            <span>Contact</span>
+        <!-- </a> -->
+    </div>
+
+    <!-- Add your scripts and other body elements here -->
+
+
+   
+        <!-- footer -->
+        <footer>
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row gy-5">
+                        <div class="col-md-4">
+                            <h4><a href="#" class="text-white">Shaheen Sharafuddeen</a></h4>
+                            <p>"Adaptable B.Com graduate turned IT enthusiast proficient in HTML, CSS, JavaScript, Django, and WordPress. Specializing in frontend and backend development alongside digital marketing expertise. Passionate about crafting engaging user experiences and driving business growth in the digital realm."
+                            </p>
+                            <ul class="navbar-nav flex-row">
+                                <li class="nav-item">
+                                    <a class="social-icon" href="https://github.com/Shaheensharafu/"><i class="ri-github-line"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="social-icon" href="https://www.instagram.com/shane_sharafu/"><i class="ri-instagram-line"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-auto">
+                            <p class="mb-0">Copyright © <a href="#">Shaheen Sharafuddeen</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <script>
+        document.getElementById('downloadBtn').addEventListener('click', function() {
+            const timer = 3; // Initial timer value
+            let countDown = timer;
+    
+            // Set interval to update timer every second
+            const initCounter = setInterval(() => {
+                if (countDown > 0) {
+                    document.getElementById('downloadBtn').innerHTML = `Your download will begin in ${countDown} seconds`;
+                    countDown--;
+                } else {
+                    clearInterval(initCounter);
+                    location.href = '/assets/Resume/shaheenResume.pdf'; // Redirect to the PDF file
+                    document.getElementById('downloadBtn').innerText = 'Your file is downloading...';
+                    setTimeout(() => {
+                        document.getElementById('downloadBtn').classList.add('disable-timer'); // Disable button after download
+                        document.getElementById('downloadBtn').innerText = 'Download again';
+                    }, 3000);
+                }
+            }, 1000);
+        });
+    </script>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
