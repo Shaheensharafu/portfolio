@@ -258,14 +258,10 @@
 
       <!-- WhatsApp floating button -->
       <div class="whatsapp-icon">
-        <!-- <a href="https://wa.me/+917012828918?text=Hello%20from%20your%20website" target="_blank" rel="noopener noreferrer"> -->
-            <!-- <img src="whatsapp-icon.png" alt="WhatsApp Icon"> -->
             <a class="social-icon" href="https://wa.me/+917012828918?text=Hello%20from%20your%20website"><i class="ri-whatsapp-line"></i></a>
             <span>Contact</span>
-        <!-- </a> -->
     </div>
 
-    <!-- Add your scripts and other body elements here -->
 
 
    
@@ -300,26 +296,52 @@
     </section>
 
     <script>
+
+
+
         document.getElementById('downloadBtn').addEventListener('click', function() {
-            const timer = 3; // Initial timer value
+            const timer = 3; 
             let countDown = timer;
     
-            // Set interval to update timer every second
             const initCounter = setInterval(() => {
                 if (countDown > 0) {
                     document.getElementById('downloadBtn').innerHTML = `Your download will begin in ${countDown} seconds`;
                     countDown--;
                 } else {
                     clearInterval(initCounter);
-                    location.href = '/assets/Resume/shaheenResume.pdf'; // Redirect to the PDF file
+                    location.href = '/assets/Resume/shaheenResume.pdf';
                     document.getElementById('downloadBtn').innerText = 'Your file is downloading...';
                     setTimeout(() => {
-                        document.getElementById('downloadBtn').classList.add('disable-timer'); // Disable button after download
+                        document.getElementById('downloadBtn').classList.add('disable-timer'); 
                         document.getElementById('downloadBtn').innerText = 'Download again';
                     }, 3000);
                 }
             }, 1000);
         });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+
+    const arrowAnimation = anime({
+        targets: '.ri-arrow-right-line', 
+        translateX: [0, 10, 0], 
+        easing: 'easeInOutSine',
+        duration: 1000, 
+        loop: true 
+    });
+
+    // Pause the animation when hovering over the icon
+    document.querySelector('.ri-arrow-right-line').addEventListener('mouseenter', () => {
+        arrowAnimation.pause();
+    });
+
+    // Resume the animation when mouse leaves the icon
+    document.querySelector('.ri-arrow-right-line').addEventListener('mouseleave', () => {
+        arrowAnimation.play();
+    });
+});
+
+
     </script>
     
 
